@@ -1,6 +1,6 @@
 # Final-Project-Bubbble Shooter
 
-Repository - 
+Repository - https://github.com/KcRockets/Final-Project-.git
 
 #Description - I will hopefully create a bubble shooter game. The main objective of the game is to shoot down the bubbles with the corresponding colors before the crowd of bubbles reach you.
 
