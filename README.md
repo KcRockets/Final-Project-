@@ -24,6 +24,8 @@ Repository - https://github.com/KcRockets/Final-Project-.git
   - If it gets complicated, need to make it a bit simplier and smaller.
 
  #Milestone
- - Week 1 - make sure the balls is there and able to dissapear after shot.
- - Week 2 - Add in new ammo to shoot at the balls and add color.
- - Week 3 - make sure the to be able to set up the game
+ - Week 1 - make sure the balls is there.
+ -  Make sure the make the balls dissapear after the shot.
+ -  Add in the guide line to help aim. 
+ - Week 2 - Add in new ammo to shoot at the balls and add colors to them.
+ - Week 3 - Add in the guide line to aim. 
