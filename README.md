@@ -1,31 +1,31 @@
-# Final-Project-Bubbble Shooter
+Final-Project Title: BUBBLE SHOOTER GAME
 
 Repository - https://github.com/KcRockets/Final-Project-.git
 
-#Description - I will hopefully create a bubble shooter game. The main objective of the game is to shoot down the bubbles with the corresponding colors before the crowd of bubbles reach you.
+#Description: In this project, I will be creating a Bubble shooter game. The purpose of the game is to shoot down the corresponding colors of the bubble that is equipped to you. Remove all of the color in stage and then you will win. Simple as that. The game runs on 60 frames per second using Pygame's clock. 
 
-#Features: 
- 1) use arrow keys to move the line to lineup the shots.
- 2) Bubbles at the top of the board will disappear after shooting the right color.
- 3) Reloads the nexts bubbles to shoot.
- 4) the ammo color is random.
+HOW THE GAME WORKS
+Starting Layout:
+When the game begins, a small window will apear with a size of 480x640. 
+The crowd of bubbles are on the top of the window. The way to create the rows is using create_strarting_rows()
 
- #Challenges 
-  Need to learn to change and add colors.
-  Make sure that the ammo is replaced with another from the gun
-  The balls at the top need to disappear.
-  I will need to learn to make the balls at the top of the board move to connect with each other in order to skrink.
-  Adding pictures in the code for visuals.
-  
- #Outcomes
-  - My ideal outcome of this project it to hopefully make the project work and make sure that the code is doable.
-  - Hopefully gets some art work in the window screen to help give it some visuals.
-  - Make sure it is playable.
-  - If it gets complicated, need to make it a bit simplier and smaller.
+How the Bubbles system works:
+The Bubbles contain five colors. Each bubbles are under the instance of the BUBBLE class. The Colors will be randomized and positioned differently each time that game is on. 
+The Bubbles can bounce off the walls, move across the screen and draw themselves onto the screen. 
+Once the bubbles reach the top, it will snap onto a grid and if it the corresponding color it will disappear.
 
- #Milestone
- - Week 1 - make sure the balls is there.
- -  Make sure the make the balls dissapear after the shot.
- -  Add in the guide line to help aim. 
- - Week 2 - Add in new ammo to shoot at the balls and add colors to them.
- - Week 3 - Add in the guide line to aim. 
+AIMING AND SHOOTING
+When the game begins, there will be a line that will help aim. The mouse controls the line to aim and shoot:
+
+This code here is what helps create the aim line and shooting: angle = math.atan2(my - shooter_y, mx - shooter_x)
+- Once the bubble is shot out it will be added to the list of bubbles
+- New bubbles will be added when the bubble is shot out.
+
+COLLISION AND SNAPPING
+The game will check for collision with the bubbles in the grid: (in python) if check_collision(b, g):
+- Once the bubble is shot, it will snap to the nearest grid position which is thanks to: (snap_to_grid)
+- if the bubbles connects to the bubble with the same color: (pop_matching)
+  but that only happens if there are three or more matching bubbles connected and then they will dissapear.
+- A new bubble will be loaded for the player for every bubble is shot out from the player.
+
+Video Link: https://youtu.be/NzCD7ypN2A0
